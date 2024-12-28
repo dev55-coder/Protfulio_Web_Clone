@@ -1,0 +1,122 @@
+:root {
+  
+  --primary:#130f40;
+  --secColor: #f9ca24;
+  --whatColor: #fff;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-family: sans-serif;
+}
+/* Body Background */
+* body {
+  background: var(--primary);
+}
+header {
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+  width: 100%;
+  top: 0;
+}
+.nav-links {
+  padding-right: 30px;
+  display: flex;
+}
+.nav-links li {
+  margin: 20px;
+}
+.nav-links a {
+  color: var(--whatColor);
+  text-decoration: none;
+  font-size: 14px;
+}
+.nav-links a:hover {
+  background: var(--secColor);
+  border: 1px solid var(--secColor);
+  border-radius: 30px;
+  padding: 10px;
+  color: var(--whatColor);
+  transition: 0.3s;
+  transition-delay: 0.1s;
+}
+.nav-links button {
+  border: 1px solid var(--secColor);
+  background: var(--secColor);
+  color: var(--whatColor);
+  font-size: 14px;
+  border-radius: 30px;
+  padding: 13px 20px;
+  position: relative;
+  top: -8px;
+}
+.nav-links button:hover {
+  cursor: pointer;
+}
+/* section area style */
+.main-menu {
+  margin: 15% 7%;
+}
+.main-menu h3 {
+  color: var(--whatColor);
+  font-size: 17px;
+  padding-bottom: 25px;
+}
+.main-menu h1 {
+  color: var(--whatColor);
+  font-size: 40px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+.main-menu h4 { 
+  color: var(--secColor);
+  font-size: 17px;
+  padding-bottom: 25px;
+}
+.main-menu p {
+  color: var(--whatColor);
+  font-size: 14px;
+  padding-bottom: 45px;
+}
+h3::selection,
+h1::selection, 
+h4::selection,
+a::selection,
+button::selection,
+p::selection {
+  background: var(--secColor);
+  color: var(--whatColor);
+}
+.main-menu button[type='button'] {
+  background: var(--secColor);
+  padding: 15px 45px;
+  border: 1px solid var(--secColor);
+  border-radius: 30px;
+  font-size: 16px;
+  color: var(--whatColor);
+}
+.main-menu button[type='button']:hover {
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 530px) {
+   header {
+   justify-content: center;
+  }
+  .nav-links {
+   padding-right: 5px;
+  }
+ .nav-links li {
+   margin: 10px;
+  }
+  .main-menu {
+    text-align: center;
+  }
+}
